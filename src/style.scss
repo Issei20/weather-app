@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+    background-image: url("./images/0v2os4h0rm251.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    color: white;
+    font-size: 2rem;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#imgLoad{
+    height: 100px;
+    width: 100px;
+}
+
+.loader {
+    height: 50px;
+}
+
+h1{
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+}
+
+.searchBtn {
+    height: 5vh;
+    width: 10vw;
+    border-style: none;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    background-color: hsl(224, 33%, 16%);
+    transition: all 180ms ease-in-out;
+    &:hover {
+        background-color: hsl(221, 48%, 26%);
+    }
+}
+
+.userInput{
+    height: 4vh;
+    width: 15vw;
+    padding: 5px;
+    padding-left: 1vw;
+    border-radius: 1.5rem;
+    border-style: none;
+    font-size: 1.3rem;
+    background-color: rgba(29, 29, 29, 0.637);
+    color: rgb(241, 241, 241);
+}
+
+.userInput:focus {
+    outline: none;
+}
+
+ .toggle-btn {
+    width: 40px;
+    height: 20px;
+    background: hsl(224, 33%, 16%);
+    border-radius: 30px;
+    padding: 5px;
+    transition: all 300ms ease-in-out;
+ }
+
+ .toggle-btn {
+    .inner-circle {
+        width: 20px;
+        height: 20px;
+        background: rgb(255, 255, 255);
+        border-radius: 50%;
+        transition: all 300ms ease-in-out; 
+     }
+ } 
+
+   .container {
+     .toggled-btn {
+        width: 40px;
+        height: 20px;
+        background: hsl(221, 48%, 26%);
+        border-radius: 30px;
+        padding: 5px;
+        transition: all 300ms ease-in-out;
+        .inner-circle {
+            width: 20px;
+            height: 20px;
+            background:#ffffff;
+            border-radius: 50%;
+            transition: all 300ms ease-in-out;
+            margin-left: 20px;
+        }
+    }
+   }
+
+
+.containerToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    font-size: 1.1rem;
+   
+}
+
+.weathImg{
+    height: 30vh;
+    padding: 5px;
+    
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0);
+    width: 50vw;
+    align-items: center;
+    gap: 2vh;
+}
+
+.container-app {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 10vh;
+    gap: 4vh;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+
+        img {
+            color: white;
+        }
+}
+
+
+.min-max-container {
+    display: flex;
+    width: 70vw;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    
+}
+
+.weatherTempMin {
+ 
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vh;
+
+    div {
+         color: rgb(87, 187, 77);
+    }
+}
+
+.weatherTempMax {
+ 
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vh;
+    div {
+        color: rgb(223, 43, 43);
+    }
+}
+
+.weathIcon {
+    height: 15vh;
+}
+
+.weatherTemp {
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+.weatherDescr {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.angleIcon {
+    height: 3vh;
+    display: flex;
+}
+
+
+// responsive
+
+@media (max-width: 600px) {
+    body {
+        height: 110vh;
+    }
+    .container-app {
+        padding: 4vh;
+    }
+
+    .inputContainer {
+        width: 80vw;
+    }
+
+    .searchBtn {
+        width: 50vw;
+        height: 6vh;
+    }
+
+    .userInput {
+        width: 60vw;
+        height: 6vh;
+        padding-left: 5vw;
+        border-radius: 1.8rem;
+    }
+
+    .weatherLocation {
+        padding: 5vw;
+        font-size: 1.5rem;
+    }
+
+    .weatherTempMax {
+        font-size: 1.3rem;
+    }
+
+    .weatherTempMin {
+        font-size: 1.3rem;
+    }
+
+    .weatherDescr {
+        font-size: 1rem;
+        
+    }
+
+    .weathIcon {
+        height: 10vh;
+    }
+
+    .msgErr {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
